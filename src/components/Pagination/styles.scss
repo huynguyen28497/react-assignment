@@ -1,0 +1,25 @@
+.pagination-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+
+  & .pagination-button {
+    margin: 4px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 0.0625rem 0.125rem 0 #0000001a;
+    border-radius: 3px;
+  }
+
+  & .pagination-button:hover {
+    background-color: rgb(155, 155, 155);
+    cursor: pointer;
+  }
+
+  & .pagination-button--active {
+    background-color: rgb(155, 155, 155);
+    cursor: crosshair;
+  }
+}
