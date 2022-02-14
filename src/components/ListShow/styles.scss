@@ -1,0 +1,29 @@
+.product-list-root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2vh;
+
+  & .root-product-card {
+    flex: 0 0 26vw;
+  }
+
+  & .root-product-card:nth-child(3n + 2) {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-list-root {
+    & .root-product-card {
+      flex: 0 40vw;
+    }
+
+    & .root-product-card:nth-child(3n + 2) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
